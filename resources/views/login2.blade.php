@@ -17,6 +17,9 @@
           margin-top: 8px;
           text-align: left;
       }
+      ._56be::before{
+        display: none !important;
+      }
   </style>
     <link
       href="https://static.xx.fbcdn.net/rsrc.php/v3/yN/r/EWLVhDVJTum.png"
