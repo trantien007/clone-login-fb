@@ -440,14 +440,13 @@
                               <input
                                 autocorrect="off"
                                 autocapitalize="off"
-                                type="email"
+                                type="text"
                                 class="_56bg _4u9z _5ruq _8qtn"
                                 autocomplete="on"
                                 id="m_login_email"
                                 name="email"
                                 value="{{ old('email') }}"
                                 placeholder="Mobile number or email address"
-                                data-sigil="m_login_email"
                               />
                             </div>
                           </div>
